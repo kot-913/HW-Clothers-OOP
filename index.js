@@ -104,29 +104,33 @@
 
 //HW-TASK-3 OOP===========================================================================================================================
 
-// class Gym {
-//   constructor(name, prise, district) {
-//     this.name = name;
-//     this.prise = prise;
-//     this.district = district;
-//   }
-//   getConditions() {
-//     return this.name + ":" + this.prise;
-//   }
-// }
+class Gym {
+  constructor(name, prise, district) {
+    this.name = name;
+    this.prise = prise;
+    this.district = district;
+  }
+  getConditions() {
+    return this.name + ":" + this.prise;
+  }
+}
 
-// class Doza extends Gym {
-//   getDistrict() {
-//     return this.name + "placed at" + " " + this.district;
-//   }
-// }
+class Doza extends Gym {
+  getDistrict() {
+    return this.name + "placed at" + " " + this.district;
+  }
+  getShedule() {
+    return "Shedule for you gym is in prigress!";
+  }
+}
 
-// const dozaCecani = new Gym("FitnesDoza-Cecani", 400, "Cecani");
-// const dozaBuiucani = new Doza("FitnesDoza#5", 700, "Buiucani");
+const energy = new Gym("Energy", 400, "Botanica");
+const dozaBuiucani = new Doza("FitnesDoza#5", 700, "Buiucani");
 
-// console.log(dozaCecani);
-// console.log(dozaBuiucani);
-// console.log(dozaCecani.getConditions());
-// console.log(dozaBuiucani.getDistrict());
+console.log(energy);
+console.log(dozaBuiucani);
+console.log(energy.getConditions());
+console.log(dozaBuiucani.getDistrict());
+console.log(dozaBuiucani.getShedule());
 
 //first is the child of main class, second is the chaild of chaild-class. If it isn't enaugh, please, let me know.
