@@ -120,9 +120,13 @@ class Doza extends Gym {
     return this.name + "placed at" + " " + this.district;
   }
   getShedule() {
-    return "Shedule for you gym is in prigress!";
+    return prompt("Shedule for you gym is in prigress!");
   }
 }
+
+document
+  .getElementById("button")
+  .addEventListener("click", () => dozaBuiucani.getShedule());
 
 const energy = new Gym("Energy", 400, "Botanica");
 const dozaBuiucani = new Doza("FitnesDoza#5", 700, "Buiucani");
@@ -131,6 +135,5 @@ console.log(energy);
 console.log(dozaBuiucani);
 console.log(energy.getConditions());
 console.log(dozaBuiucani.getDistrict());
-console.log(dozaBuiucani.getShedule());
 
-//first is the child of main class, second is the chaild of chaild-class. If it isn't enaugh, please, let me know.
+//first is the child of main class, second and third -  chaild-class. If it isn't enaugh, please, let me know.
